@@ -5,26 +5,72 @@
 	  <meta name = "viewpoint" content = "width = device-width, initial-scale = 1.0">
 	  <title>Logo Git</title>
 	</head>
-		  <!-- Mais uma logo criada com css puro, dessa vez faremos a logo do git.
+		  <!-- Mais uma logo criada com css puro, dessa vez farei a logo do git.
 		       Ref.: https://www.freecodecamp.org/news/learn-css-create-the-git-logo/,
 		       https://www.jenniferbland.com/-->
 		  <style>
 			body{
-			  padding: 0;
-			  margin: 0;
-			  height: 100hv;	
-			  display: flex;
-			  justify-content: center;
-			  align-itens: center;	
-			  background-color: azure;	
-			}
+ 				 padding: 0;
+ 				 margin: 0;
+  				 height: 100vh;
+  				 display: flex;
+			         justify-content: center;
+                                 align-items: center;
+  				 background-color: azure;
+ 			    }
 			.git-logo{
 				height: 150px;
 				width: 150px;
 				background-color: #f06033;
 			  	border-radius: 15px;
 				position: relative;
-				transforme: rotate(45deg);
+				transform: rotate(45deg);
+			}
+			.linha1{
+				width: 110px;
+    				background-color: white;
+    				height: 10px;
+    				top: 40px;
+    				position: absolute;
+			}
+			.linha1::before{
+				content: "";
+    				position: absolute;
+    				width: 30px;
+    				height: 30px;
+    				background-color: white;
+    				border-radius: 50%;
+    				top: -8px;
+    				left: 30px;
+			}
+			.linha1::after{
+				content: "";
+    				position: absolute;
+    				width: 30px;
+    				height: 30px;
+    				background-color: white;
+    				border-radius: 50%;
+    				top: -8px;
+    				left: 90px;
+			}
+			.linha2{
+    				width: 90px;
+    				background-color: white;
+    				height: 12px;
+    				position: absolute;
+    				top: 70px;
+    				left: 30px;
+    				transform: rotate(45deg);
+			}
+			.linha2::before{
+			        content: "";
+			        position: absolute;
+			        width: 30px;
+    				height: 30px;
+    				background-color: white;
+    				border-radius: 50%;		
+    				top: -8px;
+    				left: 70px;
 			}
 		  </style>
 	<body>
@@ -34,4 +80,4 @@
 	  </div>	
 	</body>	
 		       	  			  	   			
-		     
+  </html>		     
